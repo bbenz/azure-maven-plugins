@@ -127,7 +127,7 @@
         </profile>
     </profiles>
 
-    <!-- Use local repo to host private JAR before the official package is released -->
+    <!-- Use local repo to host private JAR before the official package is released
     <repositories>
         <repository>
             <id>local-repo</id>
@@ -135,6 +135,26 @@
             <url>file://${project.basedir}/repo</url>
         </repository>
     </repositories>
+    -->
+
+    <repositories>
+        <repository>
+            <id>mseng-visualstudio.com-azure_functions_java_worker</id>
+            <url>https://mseng.pkgs.visualstudio.com/_packaging/Azure_Functions_Java_Worker/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>mseng-visualstudio.com-azure_functions_java_worker</id>
+            <url>https://mseng.pkgs.visualstudio.com/_packaging/Azure_Functions_Java_Worker/maven/v1</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>

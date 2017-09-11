@@ -65,6 +65,25 @@
         </profile>
     </profiles>
 
+    <repositories>
+        <repository>
+            <id>mseng-visualstudio.com-azure_functions_java_worker</id>
+            <url>https://mseng.pkgs.visualstudio.com/_packaging/Azure_Functions_Java_Worker/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>mseng-visualstudio.com-azure_functions_java_worker</id>
+            <url>https://mseng.pkgs.visualstudio.com/_packaging/Azure_Functions_Java_Worker/maven/v1</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.maven</groupId>
