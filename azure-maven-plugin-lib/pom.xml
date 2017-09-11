@@ -65,6 +65,25 @@
         </profile>
     </profiles>
 
+    <repositories>
+        <repository>
+            <id>MyGet</id>
+            <url>https://www.myget.org/F/azure-function/maven/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>MyGet</id>
+            <url>https://www.myget.org/F/azure-function/maven/</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.maven</groupId>

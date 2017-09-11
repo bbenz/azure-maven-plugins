@@ -127,7 +127,7 @@
         </profile>
     </profiles>
 
-    <!-- Use local repo to host private JAR before the official package is released -->
+    <!-- Use local repo to host private JAR before the official package is released
     <repositories>
         <repository>
             <id>local-repo</id>
@@ -135,6 +135,26 @@
             <url>file://${project.basedir}/repo</url>
         </repository>
     </repositories>
+    -->
+
+    <repositories>
+        <repository>
+            <id>MyGet</id>
+            <url>https://www.myget.org/F/azure-function/maven/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>MyGet</id>
+            <url>https://www.myget.org/F/azure-function/maven/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
